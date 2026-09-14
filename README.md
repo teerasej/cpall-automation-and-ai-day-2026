@@ -22,7 +22,7 @@
 | [1. สร้างผู้ช่วยสาขา](./exercises/01-create-assistant/README.md) | Agent ที่อธิบายหน้าที่ตัวเองได้ |
 | [2. เพิ่ม Knowledge](./exercises/02-add-knowledge/README.md) | คำตอบที่ตรวจเทียบเอกสารฝึกได้ |
 | [3. สร้าง Topic รับคำขอ](./exercises/03-request-topic/README.md) | บทสนทนารับรหัสสาขา หมวด และรายละเอียด พร้อมทางเลือกสองเส้นทาง |
-| [4. Entities และ Topic ที่ใช้ซ้ำ](./exercises/04-entities-and-confirmation/README.md) | รับคำพ้อง แปลงเป็นหมวดมาตรฐาน และยืนยันข้อมูลผ่าน Topic ย่อย |
+| [4. Entities และ Topic ที่ใช้ซ้ำ](./exercises/04-entities-and-confirmation/README.md) | รับข้อมูล และยืนยันข้อมูลผ่าน Topic ย่อย |
 | [5. ส่งสรุปด้วย Agent Flow](./exercises/05-email-agent-flow/README.md) | อีเมลหนึ่งฉบับหลังยืนยัน พร้อมผลตอบกลับในแชต |
 | [6. เตรียมเผยแพร่และแชร์](./exercises/06-publish-and-share/README.md) | ทดสอบใน channel ที่อนุญาต หรือเรียนจาก instructor demo หากสิทธิ์ไม่พร้อม |
 
