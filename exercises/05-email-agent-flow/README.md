@@ -2,7 +2,7 @@
 
 ผู้ช่วยรับและทวนเรื่องได้แล้ว เราจะให้ทำ action จริงขนาดเล็กคือส่งสรุปหนึ่งฉบับไป mailbox ฝึกของตัวเอง แล้วแสดงผลที่ flow ส่งกลับ
 
-> **License:** ต้องตรวจสอบ Copilot Studio entitlement ที่รวม Agent Flow และ capacity ก่อนอบรม ส่วน `Office 365 Outlook` เป็น Standard connector ต้องมี mailbox และ connection ที่ tenant อนุญาต การ publish flow เพื่อเรียกจาก Test panel ต่างจากการ publish agent ออก channel
+> **Learner prerequisite:** ใช้ Agent Flow ใน environment ที่ผู้จัดอบรมเตรียมให้ และใช้ `Office 365 Outlook` Standard connector กับ mailbox/connection ของบัญชีฝึก การ publish flow เพื่อเรียกจาก Test panel ต่างจากการ publish agent ออก channel
 
 ## Prerequisites
 

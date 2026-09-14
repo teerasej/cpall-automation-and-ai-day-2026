@@ -1,6 +1,6 @@
 # Sources and validation
 
-Documentation checked: 12 September 2026. Product documentation can change; final UI and tenant behavior must be rehearsed with participant-equivalent accounts.
+Documentation checked and scope aligned: 14 September 2026. Product documentation can change; final UI and tenant behavior must be rehearsed with participant-equivalent accounts.
 
 ## Microsoft references
 
@@ -13,14 +13,12 @@ Documentation checked: 12 September 2026. Product documentation can change; fina
 | [Topic inputs and outputs](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-managing-topic-inputs-outputs) | Details panel, typed inputs/outputs and mapping |
 | [Manage topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-topic-management) | Redirect and End current topic |
 | [System topics](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-system-topics) | Fallback behavior |
-| [Uploaded Knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-file-upload) | .txt support, Dataverse search and storage dependency |
+| [Uploaded Knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-file-upload) | .txt support and environment search/storage prerequisites |
 | [Create an Agent Flow](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow-create) | Trigger, response, publishing, synchronous response and 100-second limit |
 | [Tool configuration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent) | Dynamic invocation setting |
 | [Office 365 Outlook](https://learn.microsoft.com/en-us/connectors/office365/) | Standard connector and Send an email (V2) |
 | [Teams and Microsoft 365 Copilot channel](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams) | Publish/channel access and sharing |
-| [Copilot Studio subscriptions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-subscriptions) | Entitlements must be checked independently of connector class |
-| [Power Platform environments](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) | Dataverse for Teams environment association |
-| [Dataverse for Teams upgrade](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-upgrade-dataverse-teams) | Upgrade changes Teams-based authoring; not an instruction to upgrade |
+| [Copilot Studio subscriptions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-subscriptions) | Organizer validates the prepared learner accounts and environment |
 
 ## Acceptance checks
 
@@ -29,12 +27,14 @@ Documentation checked: 12 September 2026. Product documentation can change; fina
 - Generic instructions are not the only confirmation control: flow tool is not dynamically callable and is attached only to the true branch.
 - Sample cases include both categories, unknown information, unsupported input, confirmation and cancellation.
 - No bank-specific data, invented official CPAll policy, live table lookup, Canvas exercise, financial analysis or Code Interpreter in learner core.
-- 36 numbered teaching slides; meeting slides labelled separately C1–C3.
+- 36 numbered teaching slides; no obsolete client-decision slides.
+- Agent Builder appears only in the final overview/demo and has no learner exercise or new sample file.
+- Active Day 2 material contains no legacy Teams data-retrieval module or equivalent live-table claim.
 - Agenda covers 09:00–16:00 continuously: 420 minutes total, 90 minutes breaks/lunch, 330 minutes instruction/activity.
 - Local links and downloadable .txt assets resolve; Markdown headings and tables render.
 
 ## Evidence boundary
 
-Local checks completed on 12 September 2026: 12 Markdown files and two Knowledge assets; six exercises with 15 Practices and matching targets/checkpoints; 70 relative links resolved; Markdown rendered to HTML with 17 tables. The outline contains 36 teaching slides and three separate client slides. Time ranges are continuous from 09:00 to 16:00 and total 330 instruction/activity minutes plus 90 minutes for lunch and breaks. A content review checked the parent/child variable contract, flow input/output mapping, confirmation branch, cancellation path and pending client decisions. These are document checks, not executed conversation tests.
+The package must pass local structural checks after the 14 September update: six exercises with matching targets/checkpoints, all relative links resolved, 36 teaching slides, and continuous time ranges from 09:00 to 16:00 totaling 330 instruction/activity minutes plus 90 minutes for lunch and breaks. Content review covers the parent/child variable contract, flow input/output mapping, confirmation branch, cancellation path and Agent Builder presentation-only boundary. These are document checks, not executed conversation tests.
 
 Local structural/content validation can establish document consistency. It does not prove a flow ran, an email arrived, Knowledge indexed, or a participant could open a published agent. No client tenant changes, email sends or publication occur during authoring. Record those results during [rehearsal](./instructor-readiness-checklist.md).

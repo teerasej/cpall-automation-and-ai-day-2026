@@ -2,7 +2,7 @@
 
 เราจะสร้าง Topic ที่คุยเหมือนเจ้าหน้าที่รับเรื่อง ถามข้อมูลที่จำเป็น แยกหมวด แล้วทวนข้อมูล โดยยังไม่ส่งอีเมล
 
-> **License:** ใช้ Topics ใน full Copilot Studio ที่วิทยากรตรวจสิทธิ์แล้ว ไม่มี external connector ใน Exercise นี้
+> **Learner prerequisite:** ใช้ Topics ใน Copilot Studio environment ที่ผู้จัดอบรมเตรียมให้ ไม่มี external connector ใน Exercise นี้
 
 ## Prerequisites
 

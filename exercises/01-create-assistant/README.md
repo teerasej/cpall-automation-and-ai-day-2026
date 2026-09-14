@@ -2,7 +2,7 @@
 
 เราจะเริ่มจากผู้ช่วยหนึ่งตัวที่บอกหน้าที่และขอบเขตได้ชัด เหมือนแนะนำพนักงานใหม่ว่าช่วยงานอะไรและต้องถามใครเมื่อไม่ทราบคำตอบ
 
-> **License:** ต้องตรวจสอบก่อนเริ่มอบรมว่า full Copilot Studio และ generative orchestration พร้อมใช้ใน environment ของบัญชีฝึก ยังไม่ต้อง publish agent ใน Exercise นี้
+> **Learner prerequisite:** ใช้บัญชีและ Copilot Studio environment ที่ผู้จัดอบรมเตรียมให้ Exercise นี้ยังไม่ต้อง publish agent
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@
 3. ตั้งชื่อ `CPAll Store Support Assistant - ` ตามด้วยชื่อเล่นของตนเอง
 4. ตั้ง description ว่า `ผู้ช่วยฝึกตอบคำถามคู่มือสาขาและเตรียมคำขอช่วยเหลือจากข้อมูลสมมติ`
 5. เลือกภาษา Thai หากหน้าเริ่มสร้างมีตัวเลือกภาษา และสร้าง agent
-6. ตรวจการตั้งค่า orchestration ว่าใช้ **Generative** ตามเส้นทางของวิทยากร หากเห็นเฉพาะ classic ให้หยุดตรวจ environment/entitlement แทนการเดาเมนูต่อ
+6. ตรวจการตั้งค่า orchestration ว่าใช้ **Generative** ตามเส้นทางของวิทยากร หากเห็นเฉพาะ classic ให้หยุดและแจ้งวิทยากรแทนการเดาเมนูต่อ
 
 ### Checkpoint
 

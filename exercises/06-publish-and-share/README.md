@@ -2,7 +2,7 @@
 
 เราจะดูว่าผู้ใช้เข้าถึงผู้ช่วยได้อย่างไร ใครมีสิทธิ์ใช้ แล้วทดสอบเวอร์ชันที่เผยแพร่จริง หาก tenant ไม่อนุญาต ให้เรียนผ่านการสาธิตของวิทยากร
 
-> **License:** สิทธิ์สร้าง/test, publish, ใช้ channel และใช้ connection ต้องตรวจแยกกัน Trial ไม่ควรถูกถือว่ามีสิทธิ์ publish เสมอ ให้ IT ตรวจ entitlement ปัจจุบันก่อนวันเรียน
+> **Learner prerequisite:** ใช้บัญชีและ channel ที่ผู้จัดอบรมระบุ หากบัญชีฝึก publish หรือเปิด channel ไม่ได้ ให้เรียนผ่าน instructor demo โดยไม่เปลี่ยน authentication เอง
 
 ## Prerequisites
 

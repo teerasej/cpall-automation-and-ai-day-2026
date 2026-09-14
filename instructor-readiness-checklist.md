@@ -12,10 +12,10 @@
 | Agent Flow | สร้าง/publish flow และเรียกจาก Topic ใน environment เดียวกันได้ | Pending IT |
 | Outlook | บัญชีฝึกมี mailbox; connector connection ที่ใช้จริงส่งถึง fixed training recipient ได้ | Pending IT |
 | Tool invocation | ปิด dynamic invocation ได้; มี call เฉพาะ confirmation=true | Pending rehearsal |
-| Entitlement / capacity | IT ตรวจสิทธิ์ Copilot Studio, flow และกำลังรองรับตามจำนวนผู้เรียน ไม่สรุปจากคำว่า Standard อย่างเดียว | Pending IT |
+| Organizer-provided access | บัญชีและ environment ที่จัดให้รองรับ Exercises 1–6 สำหรับจำนวนผู้เรียน | Pending IT |
 | Channel | ระบุ Teams หรือ Microsoft 365 Copilot หนึ่งเส้นทาง หรือ instructor demo | Pending meeting |
 | Publishing / sharing | ทดสอบบัญชี creator และ participant ที่อนุญาตใน channel จริง | Pending IT |
-| วันที่จบและ module | 16:00 และการตัด Dataverse for Teams retrieval เป็น proposal ที่ต้องบันทึกผลประชุม | Pending client |
+| วันที่จบและ scope | จบ 16:00; legacy live-table retrieval ถูกตัดออก; Agent Builder เป็น demo ตอนท้าย | Confirmed 14 Sep |
 
 ## Rehearsal ที่ต้องทำ
 
@@ -37,13 +37,14 @@
 - 11:00–12:00: ฝึก custom entity และ handoff ข้อมูลสู่ confirmation ให้ครบก่อนส่งจริง
 - 13:00–14:30: build flow, map inputs, run Yes/No และอธิบาย evidence/analytics ในช่วงนี้ ไม่มี standalone testing/refinement block หลังพัก
 - 14:45–15:15: channel preparation และ publish ตามสิทธิ์
-- 15:15–16:00: เลือกผู้เรียน 2–3 คนแสดงผล แล้วอภิปรายการประยุกต์และ Q&A จบ 16:00
+- 15:15–15:40: Agent Builder overview/demo เท่านั้น ไม่สร้าง hands-on หรือ sample file เพิ่ม
+- 15:40–16:00: tool-choice recap และ Q&A จบ 16:00
 
 ## Fallback ที่ระบุผลได้ตรงจริง
 
 | หากไม่พร้อม | ทำอย่างไร | สิ่งที่ยังไม่นับว่าผ่าน |
 |---|---|---|
-| Environment หรือ entitlement ไม่พร้อม | ให้ดู agent demo ใน tenant ที่อนุญาตและอธิบาย node mapping | ผู้เรียนยังไม่ได้สร้าง agent เอง |
+| บัญชีหรือ environment ที่ผู้จัดเตรียมไว้ไม่พร้อม | ให้ดู agent demo ใน tenant ที่อนุญาตและอธิบาย node mapping | ผู้เรียนยังไม่ได้สร้าง agent เอง |
 | Knowledge upload/search ไม่พร้อม | ใช้เอกสารอ่านเทียบกับคำตอบจาก demo ที่บันทึกไว้ | ยังไม่ได้พิสูจน์ retrieval ในบัญชีผู้เรียน |
 | Outlook/flow publish ถูก policy block | ดู tool call และ run จาก demo พร้อม map inputs บนเอกสาร | ยังไม่ได้ส่งอีเมลจากบัญชีผู้เรียน |
 | Channel/admin approval ไม่พร้อม | ใช้ Test panel ของ agent ที่สร้างได้ และแยก demo channel | Test panel ไม่ใช่หลักฐาน published-channel success |

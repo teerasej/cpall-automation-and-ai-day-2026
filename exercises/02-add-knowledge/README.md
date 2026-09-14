@@ -2,7 +2,7 @@
 
 พนักงานใหม่ต้องมีคู่มือก่อนตอบคำถาม เราจะเพิ่มเอกสารสั้นสองไฟล์ให้ผู้ช่วย แล้วตรวจว่าคำตอบมีหลักฐานในเอกสารจริง
 
-> **License:** ใช้ Copilot Studio Knowledge ตาม entitlement/capacity ของ tenant ต้องตรวจสอบก่อนอบรมว่า Dataverse search และ file storage พร้อมใช้ ไม่ต้องให้ผู้เรียนสร้าง Dataverse table
+> **Learner prerequisite:** ใช้ Knowledge ใน Copilot Studio environment ที่ผู้จัดอบรมเตรียมและตรวจ search/storage แล้ว ผู้เรียนไม่ต้องสร้าง data table
 
 ## Prerequisites
 

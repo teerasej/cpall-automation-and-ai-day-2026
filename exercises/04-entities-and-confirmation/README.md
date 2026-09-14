@@ -2,7 +2,7 @@
 
 ผู้ใช้อาจพิมพ์ว่า “เครื่องพิมพ์” แทน Equipment เราจะสอน agent ให้รู้ว่าเป็นหมวดเดียวกัน แล้วส่งข้อมูลไป Topic ย่อยเพื่อทวนและขอการยืนยัน
 
-> **License:** ใช้ Entities และ Topics ใน Copilot Studio ไม่มี external connector ขั้นตอนนี้ยังไม่ส่งอีเมล
+> **Learner prerequisite:** ใช้ Entities และ Topics ใน Copilot Studio environment ที่ผู้จัดอบรมเตรียมให้ ขั้นตอนนี้ยังไม่ส่งอีเมล
 
 ## Prerequisites
 
