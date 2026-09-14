@@ -48,11 +48,4 @@ flowchart TD
     H --> J["แสดงผลที่ Flow คืนมา"]
 ```
 
-## สำหรับวิทยากร
-
-- [Presentation outline: 36 teaching slides และ client discussion](./presentation-slide-outline.md)
-- [Readiness และ rehearsal checklist](./instructor-readiness-checklist.md)
-- [Agenda coverage และการปรับจาก Krungsri](./reference-topic-coverage.md)
-- [เอกสาร Microsoft ที่ใช้ตรวจวิธีทำ](./sources-and-validation.md)
-
 **สถานะ:** เอกสารเป็น authoring package ที่ต้อง rehearsal ใน training tenant ก่อนสอน การอนุญาตส่งอีเมลและ publish ใน Exercise เป็นขั้นตอนที่ผู้เรียนทำระหว่างอบรม ไม่ใช่การอนุญาตให้สร้างหรือเปลี่ยน tenant ในระหว่างจัดทำเอกสาร
