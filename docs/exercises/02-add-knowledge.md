@@ -2,12 +2,14 @@
 
 พนักงานใหม่ต้องมีคู่มือก่อนตอบคำถาม เราจะเพิ่มเอกสารสั้นสองไฟล์ให้ผู้ช่วย แล้วตรวจว่าคำตอบมีหลักฐานในเอกสารจริง
 
+<img class="concept-illustration" src="/images/day2-approved-knowledge.png" alt="ผู้ช่วยตอบจากคู่มือฝึกที่ได้รับอนุมัติแทนการเดาคำตอบ">
+
 > **Learner prerequisite:** ใช้ Knowledge ใน Copilot Studio environment ที่ผู้จัดอบรมเตรียมและตรวจ search/storage แล้ว ผู้เรียนไม่ต้องสร้าง data table
 
 ## Prerequisites
 
-- Agent จาก [Exercise 1](../01-create-assistant/README.md)
-- ดาวน์โหลด [store-support guide](../../files/cpall-store-support-guide.txt) และ [support terms](../../files/cpall-support-terms.txt) ลงเครื่อง
+- Agent จาก [Exercise 1](./01-create-assistant.md)
+- ดาวน์โหลด [store-support guide](/downloads/cpall-store-support-guide.txt) และ [support terms](/downloads/cpall-support-terms.txt) ลงเครื่อง
 
 ## Practice 1: เพิ่มไฟล์เป็น Knowledge
 
@@ -47,4 +49,4 @@ Knowledge มีไฟล์สองรายการในสถานะพ�
 
 ผู้ช่วยตอบคำถามจากคู่มือได้แล้ว ต่อไปให้ผู้ช่วยคุยเป็นลำดับเพื่อรับคำขอ
 
-[ก่อนหน้า](../01-create-assistant/README.md) · [ถัดไป: Request Topic](../03-request-topic/README.md) · [สารบัญ](../../README.md)
+[ก่อนหน้า](./01-create-assistant.md) · [ถัดไป: Request Topic](./03-request-topic.md) · [สารบัญ](../index.md)

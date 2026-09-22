@@ -10,7 +10,9 @@
 
 **Client alignment:** Decisions from the 14 September 2026 meeting are incorporated. Agent Builder is presentation/demo content only at the end of the day.
 
-**PPTX status:** Keep this outline in Markdown. Do not create or edit a PPTX in this scope.
+**Teaching analogy:** One convenience store, two kinds of helpers. Day 2 follows the front-counter support assistant: listen, consult approved Knowledge, guide the conversation, confirm, and hand structured work to a Tool.
+
+**Learner deck:** [CPAll-Copilot-Studio-Day-2.pptx](./docs/public/downloads/CPAll-Copilot-Studio-Day-2.pptx)
 
 ## Timing map
 
@@ -37,27 +39,29 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** วันนี้ผู้ช่วยจะตอบจากคู่มือ รับเรื่อง และส่งสรุปจากข้อมูลฝึก
 - **Visual:** Store employee, short guide and training request email
 - **Speaker cue:** ใช้ TRAIN-002 และสินค้าตัวอย่าง 10/8 กล่องเป็นเรื่องเดียวตลอดวัน ระบุว่าเป็นเรื่องสมมติ
-- **Link:** [Learner journey](./README.md)
+- **Link:** [Learner journey](./docs/index.md)
+- **Analogy bridge:** Front-counter support assistant → Copilot Studio agent → today we will build the conversation, evidence source, and handoff to Agent Flow.
 
 ### Slide 2 — A question becomes a support request
 
 - **Teach:** “ต้องเตรียมอะไร” ควรตอบจาก Knowledge แต่ “ช่วยแจ้งปัญหา” ควรเริ่ม Topic รับข้อมูล
 - **Visual:** Two chat messages leading to different routes
 - **Speaker cue:** ให้ผู้เรียนบอกว่าเมื่อใดควรตอบและเมื่อใดต้องถามข้อมูลเพิ่ม
-- **Link:** [Example conversations](./files/sample-conversations.md)
+- **Link:** [Example conversations](./docs/resources/sample-conversations.md)
 
 ### Slide 3 — Knowledge, Topics and Tools
 
 - **Teach:** Knowledge คือคู่มือ, Topic คือขั้นตอนสนทนา, Tool คือ action ที่เรียกใช้งาน
 - **Visual:** Guidebook, service counter and outgoing mail tray
 - **Speaker cue:** เชื่อมกับ Day 1: flow ทำขั้นตอน ส่วน agent ช่วยคุยรับข้อมูล
+- **Analogy bridge:** คู่มือหลังเคาน์เตอร์ → Knowledge; ลำดับคำถาม → Topic; งานที่ส่งต่อหลังยืนยัน → Tool
 
 ### Slide 4 — Six visible outcomes
 
 - **Teach:** ทุก Exercise จบด้วยผลที่ตรวจได้ ตั้งแต่ agent identity จนถึง published experience
 - **Visual:** Six milestones with one checkpoint each
 - **Speaker cue:** แสดงภาพอีเมลสำเร็จเป็นปลายทางก่อนเริ่ม build
-- **Link:** [Exercise index](./README.md#เส้นทางการฝึก)
+- **Link:** [Exercise index](./docs/index.md#เส้นทางการฝึก)
 
 ## Slides 5–12: Create and ground the assistant
 
@@ -66,7 +70,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** ทุกคนเลือก environment ที่ผู้จัดอบรมเตรียม ไม่สร้างใหม่หรือสลับ authoring route
 - **Visual:** Verified environment selector
 - **Speaker cue:** เปรียบกับเข้าอบรมให้ถูกห้องก่อนเปิดคู่มือ
-- **Link:** [Exercise 1 Practice 1](./exercises/01-create-assistant/README.md)
+- **Link:** [Exercise 1 Practice 1](./docs/exercises/01-create-assistant.md)
 
 ### Slide 6 — Prepared learner resources
 
@@ -80,27 +84,30 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** ชื่อและ description บอกงานเดียวที่ผู้ช่วยรับผิดชอบ
 - **Visual:** Name and description from Exercise 1
 - **Speaker cue:** ให้ทุกคนเติมชื่อเล่นท้าย agent แล้วสร้างด้วยตัวเอง
-- **Link:** [Exercise 1](./exercises/01-create-assistant/README.md)
+- **Link:** [Exercise 1](./docs/exercises/01-create-assistant.md)
 
 ### Slide 8 — Instructions and boundaries
 
 - **Teach:** ระบุแหล่งข้อมูล ขอบเขต และสิ่งที่ไม่มีข้อมูล ไม่แต่ง SLA หรือ stock
 - **Visual:** Short excerpts from the instruction block
 - **Speaker cue:** ทดสอบ “ช่วยอะไรได้บ้าง” ก่อนเพิ่ม Knowledge
+- **Analogy bridge:** ขอบเขตหน้าที่ของพนักงานเคาน์เตอร์ → Instructions → agent บอกได้ว่าช่วยอะไรและหยุดเมื่อข้อมูลไม่พอ
 
 ### Slide 9 — Generative answers from a guide
 
 - **Teach:** ผู้ช่วยตอบจากไฟล์ที่อัปโหลด ไม่ใช่การอ่านข้อมูลปฏิบัติการแบบ live
 - **Visual:** G4 source paragraph beside a concise answer
 - **Speaker cue:** ตัวเลข 10/8 เป็นข้อมูลฝึก ไม่ใช่ stock จริง
-- **Link:** [Knowledge guide](./files/cpall-store-support-guide.txt)
+- **Link:** [Knowledge guide](./docs/public/downloads/cpall-store-support-guide.txt)
+- **Analogy bridge:** เปิดคู่มือที่อนุมัติก่อนตอบ → Knowledge grounding → ตรวจคำตอบกับข้อความในไฟล์ฝึก
 
 ### Slide 10 — Knowledge ingestion
 
 - **Teach:** เพิ่มไฟล์ ตั้ง description และรอ Ready ก่อนวัดคำตอบ
+- **Analogy bridge:** นำคู่มือเข้าชั้นเอกสารและรอจัดเก็บเสร็จ → upload Knowledge and wait for Ready → จึงเริ่ม supported/unsupported tests
 - **Visual:** Two uploaded files and Ready status
 - **Speaker cue:** อัปโหลดเฉพาะไฟล์ `.txt` สองไฟล์ ไม่ใส่ test cases
-- **Link:** [Exercise 2](./exercises/02-add-knowledge/README.md)
+- **Link:** [Exercise 2](./docs/exercises/02-add-knowledge.md)
 
 ### Slide 11 — Evidence in an answer
 
@@ -113,7 +120,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** เมื่อคู่มือไม่มีข้อมูล ผู้ช่วยควรบอกว่าไม่พบ ไม่เติมคำตอบให้ดูครบ
 - **Visual:** Supported versus unsupported question
 - **Speaker cue:** ใช้ K2/K3 ตรวจ boundary ก่อนพัก
-- **Link:** [Knowledge test cases](./files/sample-conversations.md)
+- **Link:** [Knowledge test cases](./docs/resources/sample-conversations.md)
 
 ## Slides 13–17: Guided request Topic
 
@@ -122,13 +129,14 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** Classic ใช้ trigger phrases; core นี้ใช้ `The agent chooses` กับ description ที่ชัด
 - **Visual:** Compact comparison of trigger routes
 - **Speaker cue:** อธิบายความต่างโดยไม่สลับ agent ไปมาระหว่าง modes
-- **Link:** [Exercise 3 Practice 1](./exercises/03-request-topic/README.md)
+- **Link:** [Exercise 3 Practice 1](./docs/exercises/03-request-topic.md)
 
 ### Slide 14 — Store Support Request
 
 - **Teach:** Topic เก็บข้อมูลเพื่อแจ้งเรื่อง ส่วนคำถามทั่วไปตอบผ่าน Knowledge
 - **Visual:** Topic description and first Message node
 - **Speaker cue:** เปรียบกับเจ้าหน้าที่เลือก “ตอบคำถาม” หรือ “เปิดใบรับเรื่อง”
+- **Analogy bridge:** แบบคำถามประจำเคาน์เตอร์ → Topic → เริ่มจาก Trigger phrases แล้วถามข้อมูลตามลำดับที่ตรวจได้
 
 ### Slide 15 — Questions and captured values
 
@@ -155,7 +163,8 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** Entity บอกชนิด/หมวด ส่วน Variable เก็บค่าที่ได้ในรอบนี้
 - **Visual:** Category label and a value container
 - **Speaker cue:** “เครื่องพิมพ์” จัดเป็น Equipment แต่ StoreCode เป็นอีกข้อมูลหนึ่ง
-- **Link:** [Exercise 4](./exercises/04-entities-and-confirmation/README.md)
+- **Link:** [Exercise 4](./docs/exercises/04-entities-and-confirmation.md)
+- **Analogy bridge:** พนักงานเข้าใจคำเรียกหลายแบบและจดคำมาตรฐาน → Entity and Variable → ทดสอบ synonym แล้วตรวจค่าที่เก็บ
 
 ### Slide 19 — Built-in Boolean
 
@@ -186,6 +195,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** Topic ย่อยรับ SummaryText และคืน SendConfirmed แบบ Boolean
 - **Visual:** Input → confirmation → output
 - **Speaker cue:** เหมือนส่งใบงานให้ผู้ตรวจและรับผลกลับ ผู้เรียกต้อง map ทั้งสองด้าน
+- **Analogy bridge:** อ่านใบรับเรื่องกลับให้ผู้ขอยืนยัน → reusable confirmation Topic → Yes เดินหน้าส่งงาน, No จบโดยไม่ส่ง
 
 ### Slide 24 — Yes continues, No stops
 
@@ -200,7 +210,8 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** Topic จัดการบทสนทนา; `When an agent calls the flow` เริ่ม action เมื่อ Topic เรียก
 - **Visual:** Topic canvas connected to flow canvas
 - **Speaker cue:** เปรียบกับ Forms trigger ของ Day 1 เพื่อแยกจุดเริ่มให้ชัด
-- **Link:** [Exercise 5](./exercises/05-email-agent-flow/README.md)
+- **Link:** [Exercise 5](./docs/exercises/05-email-agent-flow.md)
+- **Analogy bridge:** ผู้ช่วยหน้าเคาน์เตอร์เริ่มรับเรื่อง → Topic trigger; การส่งใบที่ยืนยันแล้วให้หลังร้าน → Agent Flow trigger
 
 ### Slide 26 — Flow inputs and output
 
@@ -219,6 +230,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** ปิด dynamic invocation แล้วเรียก tool เฉพาะ UserConfirmed=true
 - **Visual:** Confirmation branch connected to the tool
 - **Speaker cue:** Instructions อย่างเดียวไม่แทนเงื่อนไขใน Topic
+- **Analogy bridge:** ส่งใบให้ผู้ช่วยหลังร้านหลังผู้ขอยืนยัน → Tool invocation → Yes ส่งอีเมลหนึ่งฉบับ, No ส่งศูนย์ฉบับ
 
 ### Slide 29 — Response and evidence
 
@@ -237,7 +249,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** ถามคู่มือ แจ้งปัญหา ตรวจ summary และส่ง โดยใช้ข้อมูลเดียวตลอดเรื่อง
 - **Visual:** Full journey from Knowledge answer to Inbox
 - **Speaker cue:** ใช้ F1/F2 ตรวจ Yes และ No; No ต้องไม่มีอีเมล
-- **Link:** [Flow test cases](./files/sample-conversations.md)
+- **Link:** [Flow test cases](./docs/resources/sample-conversations.md)
 
 ## Slides 32–34: Publish and share
 
@@ -246,7 +258,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** ใช้ channel และผู้ใช้ที่ผู้จัดอบรมอนุญาตเท่านั้น
 - **Visual:** Creator, approved tester and channel
 - **Speaker cue:** หาก policy ไม่พร้อม ใช้ demo ไม่เปลี่ยนเป็น public/no authentication
-- **Link:** [Exercise 6](./exercises/06-publish-and-share/README.md)
+- **Link:** [Exercise 6](./docs/exercises/06-publish-and-share.md)
 
 ### Slide 33 — Publish and channel availability
 
@@ -259,6 +271,7 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Teach:** เปิด conversation ใหม่ใน channel จริงและตรวจคำตอบกับ email action สั้น ๆ
 - **Visual:** Channel conversation with matching training email
 - **Speaker cue:** ระบุผลเป็น passed, waiting for access หรือ demo อย่างตรงไปตรงมา
+- **Analogy bridge:** เปิดเคาน์เตอร์บริการหลังซ้อมและตรวจสิทธิ์ → Publish/share → ทดสอบเฉพาะ channel ที่ผู้จัดเตรียมและอนุญาต
 
 ## Slides 35–36: Extra content and close
 
@@ -275,3 +288,4 @@ Total: 420 minutes — 330 instruction/activity, 30 breaks and 60 lunch.
 - **Visual:** Decision prompts: answer only, guided conversation, business action, controlled publishing
 - **Speaker cue:** ทบทวน Knowledge → Topic → Entity → confirmation → Agent Flow → publish แล้วเปิด Q&A; จบ 16:00
 - **Link:** [Coverage and scope](./reference-topic-coverage.md)
+- **Analogy bridge:** Front-counter assistant = Copilot Studio; back-office operations runner = Power Automate; ใช้ agent เพื่อสนทนาและ flow เพื่อทำขั้นตอนที่กำหนด

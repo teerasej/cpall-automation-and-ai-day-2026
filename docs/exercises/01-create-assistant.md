@@ -2,6 +2,8 @@
 
 เราจะเริ่มจากผู้ช่วยหนึ่งตัวที่บอกหน้าที่และขอบเขตได้ชัด เหมือนแนะนำพนักงานใหม่ว่าช่วยงานอะไรและต้องถามใครเมื่อไม่ทราบคำตอบ
 
+<img class="concept-illustration" src="/images/day2-front-counter-assistant.png" alt="ผู้ช่วยหน้าร้านที่รู้หน้าที่และขอบเขตของตนเอง">
+
 > **Learner prerequisite:** ใช้บัญชีและ Copilot Studio environment ที่ผู้จัดอบรมเตรียมให้ Exercise นี้ยังไม่ต้อง publish agent
 
 ## Prerequisites
@@ -59,4 +61,4 @@
 
 เราได้ agent ตั้งต้นพร้อมขอบเขตแล้ว ต่อไปจะให้คู่มือที่ใช้ตอบคำถาม
 
-[ถัดไป: เพิ่ม Knowledge](../02-add-knowledge/README.md) · [กลับสารบัญ](../../README.md)
+[ถัดไป: เพิ่ม Knowledge](./02-add-knowledge.md) · [กลับสารบัญ](../index.md)

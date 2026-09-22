@@ -35,9 +35,9 @@
 2. ตั้ง **Identify** เป็น **User's entire response** และ **Save response as** เป็น `StoreCode`
 3. เพิ่ม Question: `เลือกหมวดปัญหา Equipment หรือ Delivery` ตั้ง Identify เป็น **Multiple choice options** เพิ่มสองตัวเลือกตามชื่อนี้ เก็บใน `CategoryChoice`
 4. หากระบบสร้าง Condition ให้อัตโนมัติให้ใช้ Condition นั้น ถ้าไม่มีให้เพิ่มเอง โดยเปรียบเทียบ `CategoryChoice` กับตัวเลือก `Equipment` ที่เลือกจาก UI
-5. แขนง Equipment เพิ่ม Message: `บอกอุปกรณ์ฝึก อาการ และเวลาที่เริ่มพบปัญหาครับ`
-6. แขนง Delivery เพิ่ม Message: `บอกจำนวนตามเอกสาร จำนวนที่นับได้ และรายการตัวอย่างครับ`
-7. ใต้จุดรวมแขนง เพิ่ม Question: `รายละเอียดของคำขอนี้คืออะไรครับ` ใช้ User's entire response เก็บใน `IssueDescription`
+5. เส้นทาง Equipment เพิ่ม Message: `บอกอุปกรณ์ฝึก อาการ และเวลาที่เริ่มพบปัญหาครับ`
+6. เส้นทาง Delivery เพิ่ม Message: `บอกจำนวนตามเอกสาร จำนวนที่นับได้ และรายการตัวอย่างครับ`
+7. ใต้จุดรวมเส้นทาง เพิ่ม Question: `รายละเอียดของคำขอนี้คืออะไรครับ` ใช้ User's entire response เก็บใน `IssueDescription`
 8. เพิ่ม Message ทวนข้อมูล โดยใช้ตัวเลือกแทรกตัวแปรใน editor แทนการพิมพ์ชื่อในวงเล็บเป็นข้อความธรรมดา:
 
    ```text
@@ -71,4 +71,4 @@
 
 เราได้ request conversation ที่เก็บข้อมูลและแยกหมวด ต่อไปจะใช้ Entity รับคำพ้องและย้ายการทวนข้อมูลไป Topic ที่ใช้ซ้ำได้
 
-[ก่อนหน้า](../02-add-knowledge/README.md) · [ถัดไป: Entities และ confirmation](../04-entities-and-confirmation/README.md) · [สารบัญ](../../README.md)
+[ก่อนหน้า](./02-add-knowledge.md) · [ถัดไป: Entities และ confirmation](./04-entities-and-confirmation.md) · [สารบัญ](../index.md)

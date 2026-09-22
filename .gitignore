@@ -22,3 +22,11 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# VitePress generated output and cache
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Local convenience link to the approved OneDrive learner deck.
+# The published binary is stored under docs/public/downloads/ instead.
+/CPAll-Copilot-Studio-Day-2.pptx

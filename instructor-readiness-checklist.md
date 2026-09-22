@@ -24,7 +24,7 @@
 3. ตรวจชนิดตัวแปร: IssueCategory เป็น entity, CategoryLabel เป็น String, RequestSummary เป็น String; SendConfirmed และ UserConfirmed เป็น Boolean
 4. ตรวจ Topic `Confirm Support Request` รับ SummaryText และคืนค่าใหม่ทุกครั้ง; trigger เป็น redirect-only และ Question behavior เป็น Ask every time
 5. ตรวจ email tool ปิด dynamic invocation; To เป็น fixed training address และไม่มี Recipient input
-6. ทำ K1/K2, E1/E2, F1/F2 ตาม [test cases](./files/sample-conversations.md) แล้วเก็บเวลา flow กับอีเมล
+6. ทำ K1/K2, E1/E2, F1/F2 ตาม [test cases](./docs/resources/sample-conversations.md) แล้วเก็บเวลา flow กับอีเมล
 7. ในสำเนาฝึกของวิทยากร ทดสอบ connection failure ตามวิธีที่ IT อนุญาต ตรวจว่าไม่คืน success หาก email ล้มเหลว ไม่ตัด connection ของผู้เรียนเพื่อทำ demo
 8. ตรวจ flow response แบบ synchronous และจบในข้อจำกัดของ Agent Flow; หลีกเลี่ยง wait approval และ loop ยาว
 9. เตรียมภาพ/บันทึกผล Analytics จาก agent ฝึกที่มีข้อมูลแล้ว พร้อมระบุช่วงเวลาและที่มา ใช้เมื่อข้อมูลสดยังไม่ขึ้น อย่าอ้าง Test trace เป็น production analytics

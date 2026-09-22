@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-- `Store Support Request` จาก Exercise 3 ทำงานครบสองแขนง
+- `Store Support Request` จาก Exercise 3 ทำงานครบสองเส้นทาง
 - ตัวแปรทั้งหมดในคู่มือนี้เป็น Topic variables ไม่ใช้ Global เพื่อไม่ให้ข้อมูลจากคำขอเก่าค้างข้ามเรื่อง
 
 ## Practice 1: สร้าง Entity สำหรับหมวดปัญหา
@@ -24,16 +24,18 @@
 3. บันทึก entity แล้วกลับ Topic `Store Support Request`
 4. เปลี่ยน Identify ของ Question หมวดปัญหาเป็น `StoreIssueCategory` เก็บคำตอบในตัวแปรใหม่ `IssueCategory` ถ้า UI ใช้ตัวแปรเดิมอัตโนมัติ ให้เปลี่ยนชื่อเป็นชื่อนี้
 5. ปรับข้อความถามเป็น `เป็นเรื่องอุปกรณ์หรือรับสินค้าครับ พิมพ์ชื่อหมวดหรืออาการสั้น ๆ ได้เลย`
-6. ปรับ Condition ทั้งสองแขนงให้ใช้ `IssueCategory` และเลือกค่า entity จาก UI แทน `CategoryChoice` เดิม
-7. ในแต่ละแขนง ก่อน Message เดิม เพิ่ม **Variable management > Set a variable value** สร้าง String variable `CategoryLabel` โดยกำหนด Equipment ในแขนง Equipment และ Delivery ในแขนง Delivery
+6. ปรับ Condition ทั้งสองเส้นทางให้ใช้ `IssueCategory` และเลือกค่า entity จาก UI แทน `CategoryChoice` เดิม
+7. ในแต่ละเส้นทาง ก่อน Message เดิม เพิ่ม **Variable management > Set a variable value** สร้าง String variable `CategoryLabel` โดยกำหนด Equipment ในเส้นทาง Equipment และ Delivery ในเส้นทาง Delivery
 8. แก้ Message ทวนข้อมูลให้ใช้ `CategoryLabel` แทน `CategoryChoice` จากนั้นตรวจว่าไม่มี node อ้างตัวแปรเก่าแล้ว
 9. ทดสอบคำว่า `เครื่องพิมพ์` และ `สินค้าไม่ครบ` ในบทสนทนาใหม่คนละครั้ง
 
 ### Checkpoint
 
-คำพ้องทั้งสองเข้าคนละแขนง และ `CategoryLabel` เป็น String มาตรฐาน Equipment หรือ Delivery
+คำพ้องทั้งสองเข้าคนละเส้นทาง และ `CategoryLabel` เป็น String มาตรฐาน Equipment หรือ Delivery
 
 > **💡 Tip:** Entity เหมือนป้ายจัดหมวดในร้าน ส่วน Variable คือช่องที่เก็บของของลูกค้าคนนี้ เราใช้ CategoryLabel เพื่อส่งข้อความธรรมดาออกไปโดยไม่ผูกกับชนิด choice/entity
+
+<img class="concept-illustration" src="/images/day2-confirmation.png" alt="ผู้ช่วยทวนรายละเอียดและรอคำยืนยันก่อนส่งคำขอ">
 
 ## Practice 2: สร้าง Topic ยืนยันที่รับข้อมูลจากภายนอก
 
@@ -69,8 +71,8 @@ Topic ย่อยแสดง summary จาก input ถามยืนยั�
 3. แทน Message ทวนข้อมูลและ End current topic เดิมท้าย Topic ด้วย **Topic management > Go to another topic** (Redirect) เลือก `Confirm Support Request`
 4. กำหนด input `SummaryText` = `Topic.RequestSummary`; จับ output `SendConfirmed` ลง Boolean variable ใหม่ในผู้เรียกชื่อ `UserConfirmed`
 5. หลัง Redirect เพิ่ม Condition `UserConfirmed is equal to true` เลือก Boolean true ไม่พิมพ์ข้อความ `"true"`
-6. แขนง true เพิ่ม Message `ยืนยันแล้ว ขั้นต่อไปเราจะเพิ่ม Flow ส่งอีเมลใน Exercise 5` แล้ว End current topic
-7. แขนง false เพิ่ม Message `ยกเลิกคำขอนี้แล้ว ยังไม่มีการส่งอีเมล หากข้อมูลผิดให้เริ่มแจ้งปัญหาใหม่ครับ` แล้ว End current topic
+6. เส้นทาง true เพิ่ม Message `ยืนยันแล้ว ขั้นต่อไปเราจะเพิ่ม Flow ส่งอีเมลใน Exercise 5` แล้ว End current topic
+7. เส้นทาง false เพิ่ม Message `ยกเลิกคำขอนี้แล้ว ยังไม่มีการส่งอีเมล หากข้อมูลผิดให้เริ่มแจ้งปัญหาใหม่ครับ` แล้ว End current topic
 8. ทดสอบใหม่สองครั้ง ครั้งแรกตอบ Yes ครั้งที่สองตอบ No ตรวจทางเดินและอย่านำผลยืนยันครั้งก่อนมาใช้
 
 ### Checkpoint
@@ -79,6 +81,6 @@ Summary แสดงค่า StoreCode/CategoryLabel/IssueDescription ของ
 
 ## Summary
 
-เราได้ข้อมูลมาตรฐานและ reusable confirmation แล้ว Flow จะต่อเฉพาะแขนง true ใน Exercise ถัดไป
+เราได้ข้อมูลมาตรฐานและ reusable confirmation แล้ว Flow จะต่อเฉพาะเส้นทาง true ใน Exercise ถัดไป
 
-[ก่อนหน้า](../03-request-topic/README.md) · [ถัดไป: Agent Flow](../05-email-agent-flow/README.md) · [สารบัญ](../../README.md)
+[ก่อนหน้า](./03-request-topic.md) · [ถัดไป: Agent Flow](./05-email-agent-flow.md) · [สารบัญ](../index.md)

@@ -2,6 +2,8 @@
 
 ผู้ช่วยรับและทวนเรื่องได้แล้ว เราจะให้ทำ action จริงขนาดเล็กคือส่งสรุปหนึ่งฉบับไป mailbox ฝึกของตัวเอง แล้วแสดงผลที่ flow ส่งกลับ
 
+<img class="concept-illustration" src="/images/day2-agent-flow-handoff.png" alt="ผู้ช่วยส่งต่องานที่ยืนยันแล้วให้ Agent Flow ดำเนินการ">
+
 > **Learner prerequisite:** ใช้ Agent Flow ใน environment ที่ผู้จัดอบรมเตรียมให้ และใช้ `Office 365 Outlook` Standard connector กับ mailbox/connection ของบัญชีฝึก การ publish flow เพื่อเรียกจาก Test panel ต่างจากการ publish agent ออก channel
 
 ## Prerequisites
@@ -45,12 +47,12 @@ Flow มีสามส่วนหลัก trigger → email → response, ม
 
 ## Practice 2: เรียก Flow เฉพาะหลังยืนยัน
 
-**Primary target:** เชื่อม flow กับแขนงยืนยันใน Topic โดยส่งข้อมูลที่ผู้ใช้ตรวจแล้ว
+**Primary target:** เชื่อม flow กับเส้นทางยืนยันใน Topic โดยส่งข้อมูลที่ผู้ใช้ตรวจแล้ว
 
 1. กลับ agent เปิด **Tools > Add a tool** เลือก flow ที่ publish แล้ว
 2. ใส่ description `Send the already-confirmed fictional store-support summary to the fixed training mailbox. Called from Store Support Request only.`
 3. ที่รายละเอียด tool ปิด **Allow agent to decide dynamically when to use the tool** เพื่อไม่ให้ generative orchestration เรียกส่งเองข้าม confirmation
-4. เปิด `Store Support Request` ที่แขนง `UserConfirmed = true` แทน Message placeholder ด้วย **Add a tool / Call an action** เลือก flow นี้
+4. เปิด `Store Support Request` ที่เส้นทาง `UserConfirmed = true` แทน Message placeholder ด้วย **Add a tool / Call an action** เลือก flow นี้
 5. จับคู่ inputs/outputs:
 
    | Flow field | Topic value |
@@ -60,7 +62,7 @@ Flow มีสามส่วนหลัก trigger → email → response, ม
    | ResponseMessage output | สร้าง String `Topic.DeliveryMessage` |
 
 6. หลัง tool เพิ่ม Message แทรก `DeliveryMessage` แล้ว End current topic
-7. ตรวจแขนง false ว่ายังมีเพียงข้อความยกเลิกและ End current topic ไม่มี tool call
+7. ตรวจเส้นทาง false ว่ายังมีเพียงข้อความยกเลิกและ End current topic ไม่มี tool call
 8. บันทึก แล้วตรวจ Instructions เดิมจาก Exercise 1 ว่ายังครบ ไม่เขียนทับส่วน Knowledge
 9. เริ่ม Test ใหม่ แจ้งปัญหาและตอบ Yes หากระบบขอเชื่อมต่อ ให้ตรวจบัญชีที่ใช้ก่อนยืนยัน ไม่ถือว่าจะมี consent dialog เหมือนกันทุก tenant
 
@@ -89,4 +91,4 @@ Yes มีหนึ่งอีเมลและ success response; No ไม่
 
 เราได้ agent ที่ถาม ตอบ และทำ action ได้แล้ว ต่อไปเตรียมใช้ผ่าน channel ที่ IT อนุญาต
 
-[ก่อนหน้า](../04-entities-and-confirmation/README.md) · [ถัดไป: Publish และ share](../06-publish-and-share/README.md) · [สารบัญ](../../README.md)
+[ก่อนหน้า](./04-entities-and-confirmation.md) · [ถัดไป: Publish และ share](./06-publish-and-share.md) · [สารบัญ](../index.md)
