@@ -59,10 +59,6 @@ export default withMermaid(
         text: 'อัปเดตล่าสุด',
         formatOptions: { dateStyle: 'medium', timeStyle: 'short' }
       },
-      editLink: {
-        pattern: 'https://github.com/teerasej/cpall-automation-and-ai-day-2026/edit/main/docs/:path',
-        text: 'แก้ไขหน้านี้บน GitHub'
-      },
       search: {
         provider: 'local',
         options: {
@@ -80,9 +76,6 @@ export default withMermaid(
           }
         }
       },
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/teerasej/cpall-automation-and-ai-day-2026' }
-      ],
       footer: {
         message: 'เนื้อหาจำลองสำหรับการฝึกอบรม Microsoft Copilot Studio',
         copyright: 'Copilot Studio Day 2 · 2026'
