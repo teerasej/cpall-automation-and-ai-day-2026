@@ -78,7 +78,7 @@ export default withMermaid(
       },
       footer: {
         message: 'เนื้อหาจำลองสำหรับการฝึกอบรม Microsoft Copilot Studio',
-        copyright: 'Copilot Studio Day 2 · 2026'
+        copyright: 'All right reserved. Teerasej Jiraphatchandej · <a href="https://www.facebook.com/teerasej" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.youtube.com/teerasej" target="_blank" rel="noopener noreferrer">YouTube</a>'
       }
     },
     mermaid: {

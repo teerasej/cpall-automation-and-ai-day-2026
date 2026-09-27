@@ -20,6 +20,10 @@
   border-top: 3px solid #c83c42;
 }
 
+#app .VPFooter.has-sidebar {
+  display: block;
+}
+
 /* Let the store story fill the hero instead of VitePress's small square image slot. */
 .VPHome .VPHero .image {
   margin: 0 0 28px;
