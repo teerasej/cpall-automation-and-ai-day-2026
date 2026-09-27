@@ -23,7 +23,7 @@ export default withMermaid(
           text: 'ไฟล์ประกอบ',
           items: [
             { text: 'ดาวน์โหลดไฟล์สำหรับ Knowledge', link: '/resources/downloads' },
-            { text: 'ดาวน์โหลดสไลด์ผู้เรียน', link: '/downloads/CPAll-Copilot-Studio-Day-2.pptx' },
+            { text: 'ดาวน์โหลดสไลด์ผู้เรียน', link: '/downloads/CPAll-Copilot-Studio-Day-2-Release.pptx' },
             { text: 'บทสนทนาฝึก', link: '/resources/sample-conversations' }
           ]
         }
@@ -37,11 +37,11 @@ export default withMermaid(
           text: 'เส้นทางการฝึก',
           collapsed: false,
           items: [
-            { text: '1 · สร้างผู้ช่วยสาขา', link: '/exercises/01-create-assistant' },
-            { text: '2 · เพิ่ม Knowledge', link: '/exercises/02-add-knowledge' },
-            { text: '3 · สร้าง Topic รับคำขอ', link: '/exercises/03-request-topic' },
-            { text: '4 · Entities และยืนยัน', link: '/exercises/04-entities-and-confirmation' },
-            { text: '5 · ส่งด้วย Agent Flow', link: '/exercises/05-email-agent-flow' },
+            { text: '1 · Portal และสร้าง Agent', link: '/exercises/01-create-assistant' },
+            { text: '2 · Instructions และ Test', link: '/exercises/02-instructions-and-test' },
+            { text: '3 · เพิ่ม Knowledge', link: '/exercises/03-add-knowledge' },
+            { text: '4 · Topic สั้น ๆ', link: '/exercises/04-request-topic' },
+            { text: '5 · Agent Flow และ Test', link: '/exercises/05-agent-flow-and-test' },
             { text: '6 · เตรียมเผยแพร่', link: '/exercises/06-publish-and-share' }
           ]
         },
@@ -58,10 +58,6 @@ export default withMermaid(
       lastUpdated: {
         text: 'อัปเดตล่าสุด',
         formatOptions: { dateStyle: 'medium', timeStyle: 'short' }
-      },
-      editLink: {
-        pattern: 'https://github.com/teerasej/cpall-automation-and-ai-day-2026/edit/main/docs/:path',
-        text: 'แก้ไขหน้านี้บน GitHub'
       },
       search: {
         provider: 'local',
@@ -80,9 +76,6 @@ export default withMermaid(
           }
         }
       },
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/teerasej/cpall-automation-and-ai-day-2026' }
-      ],
       footer: {
         message: 'เนื้อหาจำลองสำหรับการฝึกอบรม Microsoft Copilot Studio',
         copyright: 'Copilot Studio Day 2 · 2026'

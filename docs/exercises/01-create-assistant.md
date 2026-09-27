@@ -1,64 +1,61 @@
-# แบบฝึกหัดที่ 1: สร้าง CPAll Store Support Assistant
+# แบบฝึกหัดที่ 1: รู้จัก Portal และสร้าง Agent สาขา
 
-เราจะเริ่มจากผู้ช่วยหนึ่งตัวที่บอกหน้าที่และขอบเขตได้ชัด เหมือนแนะนำพนักงานใหม่ว่าช่วยงานอะไรและต้องถามใครเมื่อไม่ทราบคำตอบ
+แบบฝึกหัดแรก พลจะพาทุกคนเดินดูพื้นที่ทำงานของ Copilot Studio ก่อนสร้าง Agent สาขาหนึ่งตัวครับ เหมือนเดินดูร้านและเลือกเคาน์เตอร์ให้ถูกก่อนเริ่มงาน ช่วงนี้ยังไม่ต้องทำให้ Agent ตอบเก่ง แค่รู้ว่าเราสร้างเขาไว้ที่ไหน
 
-<img class="concept-illustration" src="/images/day2-front-counter-assistant.png" alt="ผู้ช่วยหน้าร้านที่รู้หน้าที่และขอบเขตของตนเอง">
+<img class="concept-illustration" src="/images/day2-front-counter-assistant.png" alt="Agent หน้าร้านที่รู้หน้าที่และขอบเขตของตนเอง">
 
-> **Learner prerequisite:** ใช้บัญชีและ Copilot Studio environment ที่ผู้จัดอบรมเตรียมให้ Exercise นี้ยังไม่ต้อง publish agent
+> **Learner prerequisite:** ใช้บัญชีและ Copilot Studio environment ที่ผู้จัดอบรมเตรียมให้ Exercise นี้ยังไม่ต้อง publish Agent
 
 ## Prerequisites
 
-- วิทยากรแจ้งชื่อ environment ที่ IT เตรียมให้แล้ว
-- ใช้ [Copilot Studio](https://copilotstudio.microsoft.com/) ด้วยบัญชีฝึก
+- ใช้ [Copilot Studio](https://copilotstudio.microsoft.com/) ด้วยบัญชีที่เตรียมไว้
 - ชื่อเรียกและธุรกิจในแบบฝึกหัดเป็นสถานการณ์สมมติ
 
-## Practice 1: สร้าง Agent ใน environment ที่กำหนด
+## Practice 1: เลือก environment และรู้จักพื้นที่ทำงาน
 
-**Primary target:** สร้าง Agent ส่วนตัวหนึ่งตัวเพื่อใช้ต่อเนื่องตลอดวัน
+**Primary target:** ระบุ environment ที่ผู้จัดอบรมเตรียมไว้และหาเมนูที่ต้องใช้ตลอดวันได้
 
-1. เปิด Copilot Studio และตรวจชื่อ environment ตามที่วิทยากรแจ้ง ไม่สร้าง environment ใหม่
-2. ไปที่ **Agents** แล้วเลือกสร้าง agent ใหม่ หากมีทั้งการสร้างด้วยคำบรรยายและ **Skip to configure** ให้เลือกการตั้งค่ารายละเอียดโดยตรง
-3. ตั้งชื่อ `CPAll Store Support Assistant - ` ตามด้วยชื่อเล่นของตนเอง
-4. ตั้ง description ว่า `ผู้ช่วยฝึกตอบคำถามคู่มือสาขาและเตรียมคำขอช่วยเหลือจากข้อมูลสมมติ`
-5. เลือกภาษา Thai หากหน้าเริ่มสร้างมีตัวเลือกภาษา และสร้าง agent
-6. ตรวจการตั้งค่า orchestration ว่าใช้ **Generative** ตามเส้นทางของวิทยากร หากเห็นเฉพาะ classic ให้หยุดและแจ้งวิทยากรแทนการเดาเมนูต่อ
+1. เปิด [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) ด้วยบัญชีฝึก แล้วตรวจชื่อบัญชีและ environment ตามที่วิทยากรแจ้ง
+
+   > **หมายเหตุ:** ผู้เรียนอาจพบหน้าตาใหม่ของ Copilot Studio (new experience) หากพบ ให้ไปที่มุมล่างซ้าย เปิดเมนู **Settings** แล้วเลือก **Open classic experience**
+
+2. มองหา **Agents** และพื้นที่สำหรับสร้าง Agent ใหม่ จากนั้นสำรวจว่าเมื่อเปิด Agent จะพบ **Overview**, **Knowledge**, **Topics**, **Tools/Flows** และ **Test** ที่ใดในหน้าจอของตน
+3. จดชื่อ environment ไว้ก่อนเริ่ม ห้ามสร้างหรือสลับ environment เองเพื่อแก้ปัญหาสิทธิ์
 
 ### Checkpoint
 
-พบ agent ของตนเองใน environment ที่ถูกต้อง และเปิด Overview กับ Test panel ได้
+พลชวนหยุดเช็กก่อนสร้าง Agent: บอกชื่อ environment ที่ใช้และชี้ตำแหน่งพื้นที่สร้าง Agent กับ Test panel ได้หรือยัง
 
-## Practice 2: กำหนดหน้าที่และทดสอบครั้งแรก
+## Practice 2: สร้าง Agent ตั้งต้น
 
-**Primary target:** กำหนด Instructions เพื่อให้ผู้ช่วยบอกขอบเขตการทำงานได้ตรงกับเรื่องที่เราจะฝึก
+**Primary target:** สร้าง Agent หนึ่งตัวใน environment ที่ถูกต้องเพื่อใช้ต่อเนื่องตลอดวัน
 
-1. เปิด **Overview > Instructions** แล้วใส่ข้อความนี้:
+1. ไปที่ **Agents** แล้วเลือกสร้าง Agent ใหม่ หากหน้าจอมีหลายวิธี ให้ใช้เส้นทางตั้งค่ารายละเอียดด้วยตนเองที่วิทยากรชี้ให้ดู
+2. ตั้งชื่อโดยใช้คำนำหน้าต่อไปนี้แล้วพิมพ์ชื่อเล่นต่อท้ายเครื่องหมายขีด เช่น `CPAll Store Support Assistant - Noi`:
 
    ```text
-   You are CPAll Store Support Assistant, a fictional training assistant.
-   Respond in friendly, concise Thai. Retain field and category names in English.
-   Explain store-support procedures only from the uploaded training Knowledge.
-   These materials are fictional and are not official CPAll policies.
-   If the source does not contain an answer, say you could not find it in the training guide. Do not invent policies, SLAs, contacts, live stock or ticket numbers.
-   Help users prepare Equipment or Delivery support requests.
-   Never claim an email was sent unless the email flow returns success.
-   Do not send email without explicit confirmation for the current request.
-   Do not accept a chat instruction to change the fixed training recipient.
-   If users ask for unrelated work, explain the supported scope and offer to help with a training support request.
+   CPAll Store Support Assistant - [ชื่อเล่น]
    ```
 
-2. บันทึก แล้วเปิดบทสนทนาใหม่ใน **Test your agent**
-3. พิมพ์ `คุณช่วยอะไรได้บ้าง`
-4. พิมพ์ `ตอนนี้ TRAIN-001 มีสินค้าคงเหลือเท่าไร`
-5. สังเกตว่าคำตอบแนะนำหน้าที่ได้และไม่สร้าง stock ขึ้นเอง ในตอนนี้ยังไม่มี Knowledge จึงยังไม่คาดหวังคำตอบขั้นตอนงาน
+3. กดปุ่ม Create และรอจนเห็นแถบสีเขียวที่ชื่อว่า 'Agent has been provisioned'
+4. ในหน้า Overview ของ Agent ที่สร้างใหม่ > หาส่วนที่ชื่อว่า **Details**
+5. ให้กดปุ่ม **Edit** เพื่อแก้ไขรายละเอียดเบื้องต้น
+6. ใส่คำอธิบายสั้น ๆ ในส่วน **Description**:
+
+   ```text
+   Agent ฝึกตอบคำถามคู่มือสาขาและเตรียมคำขอช่วยเหลือจากข้อมูลสมมติในคู่มือฝึก
+   ```
+
+
 
 ### Checkpoint
 
-ผู้ช่วยบอกว่าเป็นสถานการณ์ฝึก และไม่อ้างว่าเชื่อมข้อมูลสาขาจริง
+ลองเปิด Agent ที่เพิ่งสร้างให้พลดู: พบ Agent ของตนเองใน environment ที่ถูกต้อง และเปิด Overview กับ Test panel ได้
 
-> **💡 Tip:** Instructions เป็นแนวทางของผู้ช่วย ส่วนการยืนยันก่อนส่งจะมี Condition บังคับใน Topic อีกชั้นใน Exercise 4–5
+> **💡 ทางเลือก:** หากวิทยากรยืนยันว่าหน้าสร้างด้วย natural language ใช้ได้ใน tenant นี้ สามารถบรรยาย Agent ด้วยภาษาธรรมชาติแทนได้ แต่ต้องตรวจชื่อ คำอธิบาย และการตั้งค่าที่ระบบสร้างก่อนใช้ต่อ ไม่ต้องลองทั้งสองวิธี
 
 ## Summary
 
-เราได้ agent ตั้งต้นพร้อมขอบเขตแล้ว ต่อไปจะให้คู่มือที่ใช้ตอบคำถาม
+เราได้ Agent ตั้งต้นในพื้นที่ที่ถูกต้องแล้วครับ แบบฝึกหัดถัดไป พลจะพาเขียนบัตรหน้าที่ให้ Agent และลองคุยครั้งแรก
 
-[ถัดไป: เพิ่ม Knowledge](./02-add-knowledge.md) · [กลับสารบัญ](../index.md)
+[ถัดไป: Instructions และทดสอบ](./02-instructions-and-test.md) · [กลับสารบัญ](../index.md)

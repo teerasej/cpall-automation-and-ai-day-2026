@@ -2,9 +2,9 @@
 
 [https://teerasej.github.io/cpall-automation-and-ai-day-2026/](https://teerasej.github.io/cpall-automation-and-ai-day-2026/)
 
-Thai-first learner exercises for a beginner Microsoft Copilot Studio workshop. The learner builds a fictional store-support assistant with Instructions, uploaded Knowledge, Topics, Entities, Variables, confirmation, and an Outlook Agent Flow.
+Thai-first learner exercises for a beginner Microsoft Copilot Studio workshop. The learner explores the portal, creates a fictional store-support assistant, adds Instructions and Knowledge, then connects a small confirmed Topic to an Outlook Agent Flow. Agent Builder and AI Builder are instructor demonstrations only.
 
-Learner-facing Markdown is maintained in [`docs/`](./docs/). Each published page includes an **แก้ไขหน้านี้บน GitHub** link so small corrections can be proposed directly from the site.
+Learner-facing Markdown is maintained in [`docs/`](./docs/). The learner site does not link to the public source repository.
 
 ## Edit and preview locally
 
@@ -39,4 +39,4 @@ These files remain in the repository but are intentionally excluded from learner
 - [Reference topic coverage](./reference-topic-coverage.md)
 - [Presentation slide outline](./presentation-slide-outline.md)
 
-Local artifact validation does not prove tenant readiness. Knowledge indexing, Agent Flow execution, Outlook delivery, channel access, and agent publishing must be rehearsed with the prepared training accounts and environment.
+Local artifact validation does not prove tenant readiness. Knowledge indexing, Agent Flow execution, Outlook delivery, channel access, and Agent publishing must be rehearsed with the prepared training accounts and environment.

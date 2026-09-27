@@ -27,6 +27,11 @@ yarn-error.log*
 docs/.vitepress/dist/
 docs/.vitepress/cache/
 
+# Local authoring and validation workspaces
+.build/
+.codex-finalizer/
+.codex-presentation-build/
+
 # Local convenience link to the approved OneDrive learner deck.
 # The published binary is stored under docs/public/downloads/ instead.
 /CPAll-Copilot-Studio-Day-2.pptx
