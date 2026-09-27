@@ -57,6 +57,47 @@
   transform: none;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  #app .VPHome .VPHero .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+  }
+
+  #app .VPHome .VPHero .main,
+  #app .VPHome .VPHero .image {
+    min-width: 0;
+    margin: 0;
+  }
+
+  #app .VPHome .VPHero .main {
+    order: 1;
+  }
+
+  #app .VPHome .VPHero .image {
+    order: 2;
+  }
+
+  #app .VPHome .VPHero .name,
+  #app .VPHome .VPHero .text,
+  #app .VPHome .VPHero .tagline {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #app .VPHome .VPHero .name,
+  #app .VPHome .VPHero .text {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.18;
+  }
+
+  #app .VPHome .VPHero .actions {
+    justify-content: flex-start;
+  }
+}
+
 @media (min-width: 960px) {
   .VPHome .VPHero .image {
     margin: 0 0 0 32px;
