@@ -22,8 +22,8 @@ export default withMermaid(
         {
           text: 'ไฟล์ประกอบ',
           items: [
-            { text: 'ดาวน์โหลดไฟล์สำหรับ Knowledge', link: '/resources/downloads' },
-            { text: 'ดาวน์โหลดสไลด์ผู้เรียน', link: '/downloads/CPAll-Copilot-Studio-Day-2-Release.pptx' },
+            { text: 'ดาวน์โหลดไฟล์ Day 2', link: '/resources/downloads' },
+            { text: 'ดาวน์โหลดสไลด์ผู้เรียน (PDF)', link: '/downloads/CPAll-Copilot-Studio-Day-2-final.pdf' },
             { text: 'บทสนทนาฝึก', link: '/resources/sample-conversations' }
           ]
         }

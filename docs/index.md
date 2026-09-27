@@ -37,7 +37,7 @@ features:
 
 - เข้า [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) ด้วยบัญชีฝึกได้
 - ทราบชื่อ environment ที่วิทยากรกำหนด และไม่สร้าง environment ใหม่ระหว่างคลาส
-- ดาวน์โหลด [ชุดไฟล์ Knowledge (.zip)](/downloads/cpall-day2-knowledge-sample-files.zip) ไว้ในเครื่อง แล้วแตกไฟล์เพื่อใช้ `.txt` สองไฟล์ใน Exercise 3
+- ดาวน์โหลด [ชุดไฟล์ Day 2 (.zip)](/downloads/cpall-day2-knowledge-sample-files.zip) ซึ่งมีสไลด์ `.pdf` และไฟล์ตัวอย่าง `.txt` สองไฟล์ แตกไฟล์ไว้ในเครื่องเพื่อใช้ `.txt` ใน Exercise 3
 
 > **⚠️ Readiness checkpoint:** หากบัญชีหรือ environment เปิด capability ที่ระบุไม่ได้ ให้หยุดและแจ้งวิทยากร ไม่เปลี่ยน environment, authentication, connection หรือ policy เองระหว่างคลาส
 
@@ -74,13 +74,13 @@ features:
 
 ## ไฟล์สำหรับผู้เรียน
 
-- [ดาวน์โหลดชุดไฟล์ Knowledge สองไฟล์ (.zip)](/downloads/cpall-day2-knowledge-sample-files.zip)
+- [ดาวน์โหลดชุดไฟล์ Day 2: สไลด์ PDF และตัวอย่างสองไฟล์ (.zip)](/downloads/cpall-day2-knowledge-sample-files.zip)
 - [คู่มือรับคำขอสมมติ (.txt)](/downloads/cpall-store-support-guide.txt)
 - [คำศัพท์และขอบเขต Agent (.txt)](/downloads/cpall-support-terms.txt)
 - [บทสนทนาฝึกและผลที่คาดหวัง](./resources/sample-conversations.md)
-- [สไลด์ผู้เรียน Copilot Studio Day 2](/downloads/CPAll-Copilot-Studio-Day-2-Release.pptx)
+- [สไลด์ผู้เรียน Copilot Studio Day 2 (.pdf)](/downloads/CPAll-Copilot-Studio-Day-2-final.pdf)
 
-พลชวนแตกไฟล์ `.zip` ก่อน แล้วอัปโหลดเป็น Knowledge เฉพาะไฟล์ `.txt` สองไฟล์ ไม่อัปโหลดไฟล์ `.zip` สไลด์ คู่มือ Exercise หรือบทสนทนาทดสอบ เพราะจะทำให้ Agent อ้างคำตอบเฉลยแทนคู่มือ
+พลชวนแตกไฟล์ `.zip` ก่อน สไลด์ `.pdf` มีไว้เปิดอ่านประกอบการเรียน ส่วน Knowledge ให้อัปโหลดเฉพาะไฟล์ `.txt` สองไฟล์ ไม่อัปโหลดไฟล์ `.zip`, `.pdf`, คู่มือ Exercise หรือบทสนทนาทดสอบ เพราะจะทำให้ Agent อ้างสไลด์หรือคำตอบเฉลยแทนคู่มือ
 
 ## สิ่งที่เกิดขึ้นในหนึ่งคำขอ
 

@@ -10,10 +10,10 @@
 
 - Agent และ Instructions พื้นฐานจาก [Exercises 1–2](./02-instructions-and-test.md)
 - เตรียมไฟล์ Knowledge:
-   1. ดาวน์โหลด [ชุดไฟล์ Knowledge (.zip)](/downloads/cpall-day2-knowledge-sample-files.zip) แล้วแตกไฟล์ไว้ในเครื่อง
+   1. ดาวน์โหลด [ชุดไฟล์ Day 2 (.zip)](/downloads/cpall-day2-knowledge-sample-files.zip) แล้วแตกไฟล์ไว้ในเครื่อง ชุดนี้มีสไลด์ `.pdf` สำหรับอ่านและไฟล์ `.txt` สองไฟล์สำหรับ Knowledge
    2. หากดาวน์โหลดไม่ได้ ให้เปิด [store-support guide](/downloads/cpall-store-support-guide.txt) และ [support terms](/downloads/cpall-support-terms.txt) ใน web browser
    3. คลิกขวาบนแต่ละหน้า เลือก **Save Page As...** แล้ว Save โดยคงชื่อไฟล์ `.txt` เดิม
-- ใช้เฉพาะไฟล์สมมติสองไฟล์นี้ ไม่อัปโหลดแบบฝึกหัดหรือเฉลยเป็น Knowledge
+- ใช้เฉพาะไฟล์ `.txt` สมมติสองไฟล์นี้ ไม่อัปโหลดสไลด์ `.pdf`, แบบฝึกหัด หรือเฉลยเป็น Knowledge
 
 ## Practice 1: อ่านและเพิ่ม Knowledge ที่อนุมัติ
 
@@ -39,7 +39,7 @@
 
 2. Save Instructions แล้วเปิดไฟล์ `.txt` ที่แตกจากชุดดาวน์โหลดหรือดาวน์โหลดแยก: อ่านข้อ G3, G4 และ G7 ใน guide และอ่านความหมายของ `IssueDetails` ใน terms
 3. ใน Agent เปิด **Knowledge > Add knowledge** แล้วเลือกอัปโหลดไฟล์จากเครื่อง
-4. อัปโหลด `cpall-store-support-guide.txt` และ `cpall-support-terms.txt` แยกกัน ไม่อัปโหลดไฟล์ `.zip`
+4. อัปโหลด `cpall-store-support-guide.txt` และ `cpall-support-terms.txt` แยกกัน ไม่อัปโหลดไฟล์ `.zip` หรือ `.pdf`
 5. กดปุ่ม **Add to agent**
 6. รอกระยะเวลาประมวลผลจนทั้งสองไฟล์พร้อมใช้งาน
    > ให้สังเกตสถานะ **in progress** จนทั้งสองไฟล์พร้อมใช้งานจะเป็น **✅ ready**

@@ -4,8 +4,8 @@
 
 <div class="download-grid">
   <div>
-    <h3>ชุดไฟล์ Knowledge สำหรับ Exercise 3</h3>
-    <p>รวมคู่มือฝึกและคำศัพท์สมมติสองไฟล์ในชุดเดียว</p>
+    <h3>ชุดไฟล์ Day 2</h3>
+    <p>รวมสไลด์ PDF กับคู่มือฝึกและคำศัพท์สมมติสองไฟล์ในชุดเดียว</p>
     <p><a href="../downloads/cpall-day2-knowledge-sample-files.zip">ดาวน์โหลด cpall-day2-knowledge-sample-files.zip</a></p>
   </div>
   <div>
@@ -20,16 +20,16 @@
   </div>
   <div>
     <h3>สไลด์ผู้เรียน</h3>
-    <p>สไลด์ Copilot Studio Day 2 ฉบับปรับตาราง จำนวน 55 หน้า สำหรับตรวจทาน</p>
-    <p><a href="../downloads/CPAll-Copilot-Studio-Day-2-Release.pptx">ดาวน์โหลด CPAll-Copilot-Studio-Day-2-Release.pptx</a></p>
+    <p>สไลด์ Copilot Studio Day 2 ฉบับ PDF สำหรับอ่านประกอบการเรียน ไม่ต้องใช้ไฟล์ PowerPoint</p>
+    <p><a href="../downloads/CPAll-Copilot-Studio-Day-2-final.pdf">ดาวน์โหลด CPAll-Copilot-Studio-Day-2-final.pdf</a></p>
   </div>
 </div>
 
-> **สำคัญ:** แตกไฟล์ `.zip` ก่อน แล้วอัปโหลดเป็น Knowledge เฉพาะไฟล์ `.txt` สองไฟล์ ไม่อัปโหลดไฟล์ `.zip` สไลด์ คู่มือ Exercise หรือ [บทสนทนาฝึก](./sample-conversations.md) เพราะ Agent อาจอ้างคำตอบทดสอบแทนคู่มือที่ต้องการตรวจ
+> **สำคัญ:** แตกไฟล์ `.zip` ก่อน สไลด์ `.pdf` มีไว้เปิดอ่านเท่านั้น อัปโหลดเป็น Knowledge เฉพาะไฟล์ `.txt` สองไฟล์ ไม่อัปโหลดไฟล์ `.zip`, `.pdf`, คู่มือ Exercise หรือ [บทสนทนาฝึก](./sample-conversations.md) เพราะ Agent อาจอ้างสไลด์หรือคำตอบทดสอบแทนคู่มือที่ต้องการตรวจ
 
 ## ก่อนอัปโหลด Knowledge
 
-1. หากดาวน์โหลดชุด `.zip` ให้แตกไฟล์ก่อน แล้วเปิดไฟล์ `.txt` ทั้งสองเพื่อตรวจว่าเป็นข้อมูลฝึก
+1. หากดาวน์โหลดชุด `.zip` ให้แตกไฟล์ก่อน เปิดสไลด์ `.pdf` ไว้อ่าน และเปิดไฟล์ `.txt` ทั้งสองเพื่อตรวจว่าเป็นข้อมูลฝึก
 2. ใน Copilot Studio เลือก environment ที่วิทยากรกำหนด
 3. อัปโหลดไฟล์ตาม [แบบฝึกหัดที่ 3](../exercises/03-add-knowledge.md)
 4. รอแต่ละ Knowledge source แสดงสถานะ **Ready** ก่อนทดสอบ

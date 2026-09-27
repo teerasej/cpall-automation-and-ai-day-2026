@@ -6,6 +6,9 @@ Desktop.ini
 # Microsoft Office temporary lock files
 ~$*
 
+# Keep editable slide decks out of the public learner repository and Pages build.
+docs/public/downloads/*.pptx
+
 # Editor-local files
 .idea/
 *.swp
